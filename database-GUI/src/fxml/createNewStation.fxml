@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="492.0" prefWidth="467.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sls.CreateNewStationController">
+   <children>
+      <Label layoutX="25.0" layoutY="85.0" prefHeight="21.0" prefWidth="144.0" text="Station Name" />
+      <TextField layoutX="123.0" layoutY="82.0" prefHeight="27.0" prefWidth="246.0" />
+      <Label layoutX="25.0" layoutY="134.0" prefHeight="21.0" prefWidth="153.0" text="Stop ID" />
+      <TextField layoutX="123.0" layoutY="131.0" prefHeight="27.0" prefWidth="246.0" />
+      <Label layoutX="28.0" layoutY="190.0" prefHeight="21.0" prefWidth="148.0" text="Entry Fare" />
+      <TextField layoutX="123.0" layoutY="187.0" prefHeight="27.0" prefWidth="246.0" />
+      <Label layoutX="30.0" layoutY="253.0" prefHeight="21.0" prefWidth="105.0" text="Station Type" />
+      <Button layoutX="180.0" layoutY="426.0" mnemonicParsing="false" onAction="#createClicked" text="Create Station" />
+      <CheckBox layoutX="63.0" layoutY="354.0" mnemonicParsing="false" text="Open Station" />
+      <Label layoutX="89.0" layoutY="381.0" prefHeight="17.0" prefWidth="341.0" text="When checked, passengers can enter at this station" />
+      <TextField layoutX="150.0" layoutY="274.0" prefHeight="27.0" prefWidth="218.0" />
+      <RadioButton layoutX="115.0" layoutY="319.0" mnemonicParsing="false" text="Train Station" />
+      <RadioButton layoutX="119.0" layoutY="228.0" mnemonicParsing="false" text="Bus Station" />
+      <Label layoutX="150.0" layoutY="255.0" text="Nearest Intersection" />
+      <Text layoutX="16.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create New Station" />
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</Pane>

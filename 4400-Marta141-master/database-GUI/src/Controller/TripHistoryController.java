@@ -5,8 +5,10 @@ import javafx.scene.control.TextField;
 
 public class TripHistoryController {
 	
-	public TextField startTime;
-	public TextField endTime;
+	@FXML
+	private TextField startTime;
+	@FXML
+	private TextField endTime;
 	
 	public void back (ActionEvent actionEvent) {
 		Helper.changeScene(actionEvent, this.getClass(), Helper.WELCOME);

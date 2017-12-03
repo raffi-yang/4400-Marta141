@@ -7,9 +7,12 @@ import javafx.scene.control.TextField;
 
 public class ManageCardsController {
 	
-	public TextField addedCard;
-	public TextField creditCard;
-	public TextField value;
+	@FXML
+	private TextField addedCard;
+	@FXML
+	private TextField creditCard;
+	@FXML
+	private TextField value;
 	
 	public void addCard (ActionEvent actionEvent) {
 		String regex = "\\d+";

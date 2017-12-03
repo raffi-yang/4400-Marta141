@@ -8,14 +8,21 @@ import javafx.scene.control.TextField;
 
 public class BreezeCardController {
 
-	public TextField cardNum;
-	public TextField owner;
-	public TextField setValue;
-	public TextField transferValue;
-	public TextField value1;
-	public TextField value2;
+	@FXML
+    	private TextField cardNum;
+	@FXML
+	private TextField owner;
+	@FXML
+	private TextField setValue;
+	@FXML
+	private TextField transferValue;
+	@FXML
+	private TextField value1;
+	@FXML
+	private TextField value2;
 	
-	public CheckBox suspended;
+	@FXML
+	private CheckBox suspended;
 
 	public void back(ActionEvent actionEvent) {
 		Helper.changeScene(actionEvent, this.getClass(), Helper.ADMIN);

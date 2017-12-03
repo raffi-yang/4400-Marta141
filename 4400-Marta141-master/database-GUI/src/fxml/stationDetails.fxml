@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="390.0" prefWidth="533.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.StationDetailsController">
+   <children>
+      <Label text="Staion Detail - Station Name ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Pane prefHeight="344.0" prefWidth="493.0">
+         <children>
+            <Text layoutX="30.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Station Name" wrappingWidth="188.341796875">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font></Text>
+            <Text fill="#902929" layoutX="364.0" layoutY="40.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Station StopID" wrappingWidth="136.6064453125">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Text>
+            <Label layoutX="46.0" layoutY="111.0" text="Fare:">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="fare" layoutX="152.0" layoutY="106.0" prefHeight="27.0" prefWidth="133.0" />
+            <Text layoutX="44.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nearest Intersection:" wrappingWidth="104.27734375">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <Text layoutX="167.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Intersection Name" wrappingWidth="188.341796875">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <CheckBox fx:id="openStation" layoutX="44.0" layoutY="216.0" mnemonicParsing="false" text="Open Station">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </CheckBox>
+            <Text layoutX="73.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="When checked, passengers can enter at this station." wrappingWidth="346.6806640625">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Text>
+            <Button layoutX="23.0" layoutY="287.0" mnemonicParsing="false" onAction="#back" text="Back" />
+            <Button layoutX="355.0" layoutY="106.0" mnemonicParsing="false" onAction="#updateFare" text="Update Fare" />
+            <Button layoutX="328.0" layoutY="214.0" mnemonicParsing="false" onAction="#updateOpen" text="Update Open Status" />
+         </children>
+      </Pane>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>

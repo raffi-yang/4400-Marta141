@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="358.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.WelcomeController">
+   <children>
+      <GridPane layoutX="45.0" layoutY="55.0" prefHeight="160.0" prefWidth="488.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="177.0" minWidth="10.0" prefWidth="97.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="340.0" minWidth="10.0" prefWidth="275.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="177.0" minWidth="10.0" prefWidth="117.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="17.0" prefWidth="91.0" text="Breeze Card" GridPane.halignment="LEFT" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="91.0" text="Balance" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="91.0" text="Start At" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="91.0" text="Ending At" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <ComboBox prefHeight="27.0" prefWidth="249.0" GridPane.columnIndex="1" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Value" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <ComboBox prefHeight="27.0" prefWidth="246.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <ComboBox prefHeight="27.0" prefWidth="246.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Text fill="#19a860" strokeType="OUTSIDE" strokeWidth="0.0" text="Trip in Progess" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Button mnemonicParsing="false" onAction="#manageCards" text="Manage Cards" GridPane.columnIndex="2" />
+            <Button mnemonicParsing="false" onAction="#endTrip" text="End Trip" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+      <Button layoutX="45.0" layoutY="269.0" onAction="#viewTripHistory" mnemonicParsing="false" text="View Trip History" />
+      <Button layoutX="430.0" layoutY="269.0" onAction="#logout" mnemonicParsing="false" text="Log Out" />
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="17.0" prefWidth="208.0" text="Welcome to MARTA" />
+   </children>
+</Pane>

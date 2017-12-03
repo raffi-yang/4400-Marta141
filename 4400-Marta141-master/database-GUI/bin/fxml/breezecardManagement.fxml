@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="613.0" prefWidth="512.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.BreezeCardController">
+   <children>
+      <Pane layoutX="-14.0" layoutY="6.0" prefHeight="645.0" prefWidth="531.0">
+         <children>
+            <Text layoutX="38.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Breeze Cards" wrappingWidth="224.21875">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="38.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search/Filter" />
+            <Label layoutX="38.0" layoutY="115.0" text="Owner" />
+            <TextField fx:id="owner" layoutX="137.0" layoutY="110.0" prefHeight="27.0" prefWidth="167.0" />
+            <Label layoutX="37.0" layoutY="152.0" text="Card Number" />
+            <TextField fx:id="cardNum" layoutX="137.0" layoutY="147.0" />
+            <Label layoutX="35.0" layoutY="189.0" text="Value between" />
+            <TextField fx:id="value1" layoutX="137.0" layoutY="183.0" prefHeight="27.0" prefWidth="62.0" />
+            <Label layoutX="212.0" layoutY="189.0" text="and" />
+            <TextField fx:id="value2" layoutX="243.0" layoutY="184.0" prefHeight="31.0" prefWidth="74.0" />
+            <Button layoutX="379.0" layoutY="147.0" mnemonicParsing="false" onAction="#reset" text="Reset" />
+            <Button layoutX="379.0" layoutY="184.0" mnemonicParsing="false" onAction="#updateFilter" text="Update Filter" />
+            <CheckBox fx:id="suspended" layoutX="327.0" layoutY="116.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="193.0" text="Show Suspended Cards" />
+            <TableView layoutX="35.0" layoutY="252.0" prefHeight="200.0" prefWidth="467.0">
+              <columns>
+                <TableColumn prefWidth="220.0" text="Card #" />
+                <TableColumn prefWidth="89.0" text="Value" />
+                  <TableColumn prefWidth="157.0" text="Owner" />
+              </columns>
+            </TableView>
+            <TextField fx:id="setValue" layoutX="35.0" layoutY="492.0" prefHeight="27.0" prefWidth="120.0" />
+            <TextField fx:id="transferValue" layoutX="33.0" layoutY="534.0" prefHeight="27.0" prefWidth="120.0" />
+            <Button layoutX="171.0" layoutY="492.0" mnemonicParsing="false" onAction="#setValueOfCard" text="Set Value of Selected Card" />
+            <Button layoutX="171.0" layoutY="534.0" mnemonicParsing="false" onAction="#transfer" prefHeight="27.0" prefWidth="183.0" text="Transfer Selected Card" />
+            <Label layoutX="18.0" layoutY="6.0" text="Breeze Card Management" />
+            <Button layoutX="38.0" layoutY="590.0" mnemonicParsing="false" onAction="#back" text="Back" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

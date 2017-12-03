@@ -5,8 +5,10 @@ import javafx.scene.control.TextField;
 
 public class PassengerReportController {
 	
-	public TextField start;
-	public TextField end;
+	@FXML
+	private TextField start;
+	@FXML
+	private TextField end;
 	
 	public void back (ActionEvent actionEvent) {
 		Helper.changeScene(actionEvent, this.getClass(), Helper.ADMIN);

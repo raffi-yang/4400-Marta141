@@ -33,7 +33,28 @@ public class BreezeCardController {
 	}
 
 	public void setValueOfCard() {
-		// TODO
+		double transfer;
+		try {
+			transfer = Double.parseDouble(setValue.getText());
+		} catch (Exception e) {
+			Helper.showAlert("Error", "Please add numbers into the transfer value field.");
+			return;
+		}
+		
+		if (transfer > 1000) {
+			Helper.showAlert("Error", "Added value cannot be more than $1000");
+			return;
+		} else if (transfer < 0) {
+			Helper.showAlert("Error", "Added value cannot be less than $0");
+			return;
+		}
+		
+	    boolean fail = (BigDecimal.valueOf(transfer).scale() > 2);
+	    
+	    if (fail) {
+			Helper.showAlert("Error", "Money cannot have more than 2 decimals places.");
+			return;
+	    }
 	}
 
 	public void transfer() {

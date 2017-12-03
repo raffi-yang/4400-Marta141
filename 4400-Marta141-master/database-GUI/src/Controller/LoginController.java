@@ -12,8 +12,10 @@ import java.io.IOException;
 
 public class LoginController {
 
-	public TextField username;
-	public PasswordField password;
+	@FXML
+	private TextField username;
+	@FXML
+	private PasswordField password;
 
 	public void login(ActionEvent actionEvent) {
 		if (username.getText().equals("") || password.getText().equals("")) {

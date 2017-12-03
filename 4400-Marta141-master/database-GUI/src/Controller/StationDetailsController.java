@@ -8,9 +8,11 @@ import javafx.scene.control.TextField;
 
 public class StationDetailsController {
 	
-	public TextField fare;
+	@FXML
+	private TextField fare;
 	
-	public CheckBox openStation;
+	@FXML
+	private CheckBox openStation;
 
 	public void back (ActionEvent actionEvent) {
 		Helper.changeScene(actionEvent, this.getClass(), Helper.STATION_LISTING);

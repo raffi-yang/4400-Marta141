@@ -8,16 +8,24 @@ import javafx.scene.control.ToggleGroup;
 
 public class CreateStationController {
 
-	public TextField StationName;
-	public TextField StopID;
-	public TextField EntryFare;
-	public TextField StationType;
+	@FXML
+	private TextField StationName;
+	@FXML
+	private TextField StopID;
+	@FXML
+	private TextField EntryFare;
+	@FXML
+	private TextField StationType;
 
-	public ToggleGroup grouping;
-	public RadioButton BusStation;
-	public RadioButton TrainStation;
+	@FXML
+	private ToggleGroup grouping;
+	@FXML
+	private RadioButton BusStation;
+	@FXML
+	private RadioButton TrainStation;
 
-	public CheckBox openStation;
+	@FXML
+	private CheckBox openStation;
 
 	public void back(ActionEvent actionEvent) {
 		Helper.changeScene(actionEvent, this.getClass(), Helper.STATION_LISTING);
